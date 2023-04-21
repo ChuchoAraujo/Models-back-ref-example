@@ -89,4 +89,4 @@ def dashboard():
         return jsonify({'message': 'No tienes permiso para acceder a esta página.'}), 401
 
     # Si el usuario tiene el rol adecuado, devolver la respuesta deseada
-    return jsonify({'message': f'Bienvenido al dashboard, {user.username}!'})
+    return jsonify({'message': f'Bienvenido al dashboard, {user.username}!'}) # f es un template string en python
